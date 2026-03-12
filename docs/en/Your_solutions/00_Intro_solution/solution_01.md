@@ -1,197 +1,161 @@
-# Section 0 — Mathematical Foundations  
-## 1. Vector Algebra
+### 1. Vector Algebra
 
-We are given two vectors in $\mathbb{R}^3$:
+**Governing Formulas:**
 
-$$
-\vec{a} = [2,\,1,\,-3], \qquad \vec{b} = [4,\,-2,\,1]
-$$
+* Magnitude: $|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}$
+* Dot Product: $\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z$
+* Cross Product: $\vec{a} \times \vec{b} = (a_y b_z - a_z b_y)\mathbf{i} - (a_x b_z - a_z b_x)\mathbf{j} + (a_x b_y - a_y b_x)\mathbf{k}$
+* Angle: $\theta = \arccos\left(\frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}\right)$
 
----
-
-## Necessary definitions and formulas
-
-### 1) Magnitude (length) of a vector
-For $\vec{v} = [v_x, v_y, v_z]$,
-
-$$
-|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}
-$$
-
-### 2) Dot product
-For $\vec{a} = [a_x,a_y,a_z]$ and $\vec{b} = [b_x,b_y,b_z]$,
-
-$$
-\vec{a}\cdot\vec{b} = a_x b_x + a_y b_y + a_z b_z
-$$
-
-### 3) Cross product
-For $\vec{a} = [a_x,a_y,a_z]$ and $\vec{b} = [b_x,b_y,b_z]$,
-
-$$
-\vec{a}\times\vec{b} =
-\begin{bmatrix}
-a_y b_z - a_z b_y \\
-a_z b_x - a_x b_z \\
-a_x b_y - a_y b_x
-\end{bmatrix}
-$$
-
-### 4) Angle between two vectors
-If $\theta$ is the angle between $\vec{a}$ and $\vec{b}$, then
-
-$$
-\vec{a}\cdot\vec{b} = |\vec{a}|\,|\vec{b}| \cos\theta
-$$
-
-So,
-
-$$
-\theta = \arccos\!\left(\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\,|\vec{b}|}\right)
-$$
+**Application:**
+a) $|\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2} = \sqrt{14}$
+$|\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2} = \sqrt{21}$
+b) $\vec{a} \cdot \vec{b} = (2)(4) + (1)(-2) + (-3)(1) = 3$
+c) $\vec{a} \times \vec{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 1 & -3 \\ 4 & -2 & 1 \end{vmatrix} = -5\mathbf{i} - 14\mathbf{j} - 8\mathbf{k}$
+d) $\theta = \arccos\left(\frac{3}{\sqrt{14}\sqrt{21}}\right) = \arccos\left(\frac{3}{7\sqrt{6}}\right) \approx 79.9^\circ$
 
 ---
 
-## (a) Magnitude of each vector
+### 2. Systems of Equations
 
-### Magnitude of $\vec{a}$
-Using $|\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2}$:
+**Governing Formula (Substitution):** If $x - y = c$, then $x = y + c$.
 
-$$
-|\vec{a}| = \sqrt{4 + 1 + 9} = \sqrt{14}
-$$
+**Application:**
 
-### Magnitude of $\vec{b}$
-Using $|\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2}$:
 
-$$
-|\vec{b}| = \sqrt{16 + 4 + 1} = \sqrt{21}
-$$
+$$x = y + 1$$
 
-**Answer (a):**
+$$2(y + 1) + 3y = 12$$
 
-$$
-|\vec{a}|=\sqrt{14}, \qquad |\vec{b}|=\sqrt{21}
-$$
+$$5y = 10 \implies y = 2$$
+
+$$x = 2 + 1 \implies x = 3$$
 
 ---
 
-## (b) Dot product $\vec{a}\cdot\vec{b}$
+### 3. Proportionality
 
-Compute component-by-component:
+**Governing Formula:** $F \propto \frac{m_1 m_2}{r^2}$
 
-$$
-\vec{a}\cdot\vec{b} = (2)(4) + (1)(-2) + (-3)(1)
-$$
+**Application:**
 
-$$
-\vec{a}\cdot\vec{b} = 8 - 2 - 3 = 3
-$$
 
-**Answer (b):**
+$$F' = G \frac{(\frac{m_1}{2})(\frac{m_2}{2})}{(2r)^2}$$
 
-$$
-\vec{a}\cdot\vec{b} = 3
-$$
+$$F' = G \frac{\frac{m_1 m_2}{4}}{4r^2}$$
+
+$$F' = \frac{1}{16} \left( G \frac{m_1 m_2}{r^2} \right) = \frac{1}{16} F$$
 
 ---
 
-## (c) Cross product $\vec{a}\times\vec{b}$
+### 4. Rearranging Formulas
 
-Let $\vec{a}=[2,1,-3]$ and $\vec{b}=[4,-2,1]$.
+**Application:**
 
-### $x$-component
-$$
-(\vec{a}\times\vec{b})_x = a_y b_z - a_z b_y = (1)(1) - (-3)(-2) = 1 - 6 = -5
-$$
 
-### $y$-component
-$$
-(\vec{a}\times\vec{b})_y = a_z b_x - a_x b_z = (-3)(4) - (2)(1) = -12 - 2 = -14
-$$
+$$T = 2\pi \sqrt{\frac{L}{g}}$$
 
-### $z$-component
-$$
-(\vec{a}\times\vec{b})_z = a_x b_y - a_y b_x = (2)(-2) - (1)(4) = -4 - 4 = -8
-$$
+$$\frac{T}{2\pi} = \sqrt{\frac{L}{g}}$$
 
-So,
+$$\left(\frac{T}{2\pi}\right)^2 = \frac{L}{g}$$
 
-$$
-\vec{a}\times\vec{b} = [-5,\,-14,\,-8]
-$$
-
-**Answer (c):**
-
-$$
-\vec{a}\times\vec{b} = [-5,\,-14,\,-8]
-$$
+$$g = \frac{L}{\left(\frac{T}{2\pi}\right)^2} = \frac{4\pi^2 L}{T^2}$$
 
 ---
 
-## (d) Angle between $\vec{a}$ and $\vec{b}$
+### 5. Trigonometry
 
-Use
+**Governing Formulas:** $A_x = A \cos(\theta)$, $A_y = A \sin(\theta)$
 
-$$
-\theta = \arccos\!\left(\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\,|\vec{b}|}\right)
-$$
+**Application:**
 
-We already found:
-- $\vec{a}\cdot\vec{b} = 3$
-- $|\vec{a}| = \sqrt{14}$
-- $|\vec{b}| = \sqrt{21}$
 
-Substitute:
+$$A_x = 15 \cos(60^\circ) = 15 \left(\frac{1}{2}\right) = 7.5$$
 
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{14}\sqrt{21}}\right)
-$$
-
-Combine the radicals:
-
-$$
-\sqrt{14}\sqrt{21}=\sqrt{294}
-$$
-
-So the exact form is:
-
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{294}}\right)
-$$
-
-Optional numeric approximation:
-- $\sqrt{294}\approx 17.146$
-- $\frac{3}{\sqrt{294}}\approx 0.175$
-
-So,
-
-$$
-\theta \approx \arccos(0.175)\approx 1.395\text{ rad}\approx 79.9^\circ
-$$
-
-**Answer (d):**
-
-$$
-\theta = \arccos\!\left(\frac{3}{\sqrt{294}}\right)\approx 79.9^\circ
-$$
+$$A_y = 15 \sin(60^\circ) = 15 \left(\frac{\sqrt{3}}{2}\right) = 7.5\sqrt{3}$$
 
 ---
 
-## Final answers (summary)
+### 6. Function Analysis
 
-$$
-|\vec{a}|=\sqrt{14}, \qquad |\vec{b}|=\sqrt{21}
-$$
+**Governing Formulas:** Critical points occur where $f'(x) = 0$.
 
-$$
-\vec{a}\cdot\vec{b}=3
-$$
+**Application:**
 
-$$
-\vec{a}\times\vec{b}=[-5,\,-14,\,-8]
-$$
 
-$$
-\theta=\arccos\!\left(\frac{3}{\sqrt{294}}\right)\approx 79.9^\circ
-$$
+$$f(x) = 3x^2 - 12x + 7$$
+
+$$f'(x) = 6x - 12 = 0$$
+
+$$x = 2$$
+
+$$f(2) = 3(2)^2 - 12(2) + 7 = -5$$
+
+
+Local minimum at $(2, -5)$.
+
+---
+
+### 7. Logic & Series
+
+**Governing Formulas:** $t = \frac{d}{v}$, $d_{\text{total}} = v_{\text{fly}} \cdot t$
+
+**Application:**
+
+
+$$t = \frac{10}{1} = 10 \text{ s}$$
+
+$$d_{\text{fly}} = 2 \cdot 10 = 20 \text{ m}$$
+
+---
+
+### 8. Definite Integrals
+
+**Governing Formula:** $\int \sin(x) \, dx = -\cos(x) + C$
+
+**Application:**
+
+
+$$\int_{0}^{\pi} \sin(x) \, dx = [-\cos(x)]_{0}^{\pi}$$
+
+$$= -\cos(\pi) - (-\cos(0))$$
+
+$$= -(-1) - (-1) = 2$$
+
+---
+
+### 9. Optimization Problem
+
+**Governing Formulas:** Area $A = x \cdot y$. To maximize, set $\frac{dA}{dx} = 0$.
+
+**Application:**
+
+
+$$A = x(3 - x^2) = 3x - x^3$$
+
+$$\frac{dA}{dx} = 3 - 3x^2 = 0$$
+
+$$x^2 = 1 \implies x = 1$$
+
+$$y = 3 - (1)^2 = 2$$
+
+
+Dimensions: $1 \times 2$.
+
+---
+
+### 10. Infinite Series
+
+**Governing Formulas:** * Arctangent series: $\arctan(z) = z - \frac{z^3}{3} + \frac{z^5}{5} - \dots$
+
+* Alternating harmonic series: $\ln(1+z) = z - \frac{z^2}{2} + \frac{z^3}{3} - \dots$
+
+**Application:**
+
+
+$$x = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \dots = \arctan(1) = \frac{\pi}{4}$$
+
+$$y = \frac{1}{2} - \frac{1}{4} + \frac{1}{6} - \frac{1}{8} + \dots = \frac{1}{2} \left(1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots\right) = \frac{1}{2}\ln(2)$$
+
+
+Position: $(\frac{\pi}{4}, \frac{\ln(2)}{2})$.
