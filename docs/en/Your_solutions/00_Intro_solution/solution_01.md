@@ -128,6 +128,8 @@ $$f(2) = 3(2)^2 - 12(2) + 7 = -5$$
 
 **Result:** Local minimum at $(2, -5)$.
 
+![alt text](image.png)
+
 ---
 
 ## 7. Logic & Series
