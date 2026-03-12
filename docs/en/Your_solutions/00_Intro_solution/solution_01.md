@@ -1,5 +1,7 @@
 ## 1. Vector Algebra
 
+**Task:** Given two vectors in 3D space: $\vec{a} = [2, 1, -3]$ and $\vec{b} = [4, -2, 1]$. Calculate: a) The magnitude of each vector. b) The dot product $\vec{a} \cdot \vec{b}$. c) The cross product $\vec{a} \times \vec{b}$. d) The angle between vectors $\vec{a}$ and $\vec{b}$.
+
 > **Governing Formulas:**
 > * **Magnitude:** $|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}$
 > * **Dot Product:** $\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z$
@@ -38,6 +40,8 @@ $$\theta = \arccos\left(\frac{3}{\sqrt{14}\sqrt{21}}\right) = \arccos\left(\frac
 
 ## 2. Systems of Equations
 
+**Task:** Find the values of $x$ and $y$ that satisfy both equations: $2x + 3y = 12$ and $x - y = 1$.
+
 > **Governing Formula (Substitution):**
 > If $x - y = c$, then $x = y + c$.
 
@@ -55,6 +59,8 @@ $$x = 2 + 1 \implies x = 3$$
 
 ## 3. Proportionality
 
+**Task:** Consider the Universal Law of Gravitation: $F = G \frac{m_1 m_2}{r^2}$, where $F$ is the gravitational force between two masses $m_1$ and $m_2$, $r$ is the distance between their centers, and $G$ is the gravitational constant. Determine the factor by which the force $F$ changes if the distance $r$ is *doubled* and both masses ($m_1$ and $m_2$) are *halved*.
+
 > **Governing Formula:**
 > $F \propto \frac{m_1 m_2}{r^2}$
 
@@ -69,6 +75,8 @@ $$F' = \frac{1}{16} \left( G \frac{m_1 m_2}{r^2} \right) = \frac{1}{16} F$$
 ---
 
 ## 4. Rearranging Formulas
+
+**Task:** The formula for the period of a simple pendulum is $T = 2\pi \sqrt{\frac{L}{g}}$. Rearrange the equation give a formula for $g$ (acceleration due to gravity).
 
 > **Goal:**
 > Isolate $g$ from $T = 2\pi \sqrt{\frac{L}{g}}$
@@ -85,6 +93,8 @@ $$g = \frac{L}{\left(\frac{T}{2\pi}\right)^2} = \frac{4\pi^2 L}{T^2}$$
 
 ## 5. Trigonometry
 
+**Task:** A vector $\vec{A}$ has a magnitude of 15 and makes an angle of $\theta = 60^\circ$ with the horizontal axis. Calculate its horizontal and vertical components.
+
 > **Governing Formulas:**
 > * **Horizontal:** $A_x = A \cos(\theta)$
 > * **Vertical:** $A_y = A \sin(\theta)$
@@ -100,6 +110,8 @@ $$A_y = 15 \sin(60^\circ) = 15 \left(\frac{\sqrt{3}}{2}\right) = 7.5\sqrt{3}$$
 ---
 
 ## 6. Function Analysis
+
+**Task:** Consider the function $f(x) = 3x^2 - 12x + 7$. Identify any local maxima or minima.
 
 > **Governing Formulas:**
 > Critical points occur where the first derivative is zero: $f'(x) = 0$.
@@ -120,6 +132,8 @@ $$f(2) = 3(2)^2 - 12(2) + 7 = -5$$
 
 ## 7. Logic & Series
 
+**Task:** A bicycle is 10 meters from a wall and moves towards it at a constant speed of 1 m/s. A fly starts from the bicycle's front wheel and flies towards the wall at 2 m/s. When it hits the wall, it instantly turns back and flies to the bicycle, and so on. What is the total distance the fly travels before being crushed?
+
 > **Governing Formulas:**
 > * **Time:** $t = \frac{d}{v}$
 > * **Total Distance:** $d_{\text{total}} = v_{\text{fly}} \cdot t$
@@ -136,6 +150,8 @@ $$d_{\text{fly}} = 2 \cdot 10 = 20 \text{ m}$$
 
 ## 8. Definite Integrals
 
+**Task:** Calculate the area under the curve of the function $f(x) = \sin(x)$ from $x=0$ to $x=\pi$.
+
 > **Governing Formula:**
 > $\int \sin(x) \, dx = -\cos(x) + C$
 
@@ -150,6 +166,8 @@ $$= -(-1) - (-1) = 2$$
 ---
 
 ## 9. Optimization Problem
+
+**Task:** A rectangle is under the curve $y = 3 - x^2$ in the first quadrant. What are the dimensions of the rectangle with the maximum area?
 
 > **Governing Formulas:**
 > * **Area:** $A = x \cdot y$
@@ -172,6 +190,8 @@ $$y = 3 - (1)^2 = 2$$
 ---
 
 ## 10. Infinite Series
+
+**Task:** Determine the final position of an ant that starts at the origin and moves according to the following pattern: 1 m east, 1/2 m north, 1/3 m west, 1/4 m south, 1/5 m east, and so on.
 
 > **Governing Formulas:**
 > * **Arctangent Series:** $\arctan(z) = z - \frac{z^3}{3} + \frac{z^5}{5} - \dots$
