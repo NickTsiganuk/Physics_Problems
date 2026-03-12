@@ -107,6 +107,8 @@ $$A_x = 15 \cos(60^\circ) = 15 \left(\frac{1}{2}\right) = 7.5$$
 
 $$A_y = 15 \sin(60^\circ) = 15 \left(\frac{\sqrt{3}}{2}\right) = 7.5\sqrt{3}$$
 
+![alt text](image-1.png)
+
 ---
 
 ## 6. Function Analysis
