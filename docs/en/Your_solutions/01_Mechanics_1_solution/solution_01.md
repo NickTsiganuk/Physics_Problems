@@ -32,14 +32,21 @@ We are given an initial velocity $v_0$ of 100 m/s and an angle $\theta$ of 37°.
 > **Task:** For projectile motion, show analytically that the maximum range $R(\theta)=\frac{v_0^2\sin(2\theta)}{g}$ for a given initial velocity is achieved at a launch angle of 45°.
 
 **Solution:**
+
 To find the angle $\theta$ that maximizes the range, we must find where its first derivative with respect to $\theta$ equals zero.
 
 1.  **Differentiate $R$ with respect to $\theta$:**
+
     $$\frac{dR}{d\theta}=\frac{v_0^2}{g}\cdot\frac{d}{d\theta}(\sin(2\theta))=\frac{2v_0^2\cos(2\theta)}{g}$$
+
 2.  **Set the derivative to zero:**
+
     $$\frac{2v_0^2\cos(2\theta)}{g}=0$$
+
     Since $\frac{2v_0^2}{g}$ is a non-zero constant, we must have $\cos(2\theta)=0$.
+
 3.  **Solve for $\theta$:**
+
     The cosine function is zero at 90°. Therefore, $2\theta=90^\circ$, which means **$\theta=45^\circ$**. (The second derivative $-\frac{4v_0^2\sin(2\theta)}{g}$ is negative at 45°, confirming this is a maximum).
 
 ---
