@@ -28,13 +28,16 @@ We are given an initial velocity $v_0$ of 100 m/s and an angle $\theta$ of 37°.
 ---
 
 ## 2. Range Optimization
+
 For projectile motion, show analytically that the maximum range $R(\theta)=\frac{v_0^2 \sin(2\theta)}{g}
 $ for a given initial velocity is achieved at a launch angle of $45^\circ$.
 
 ### The Goal
+
 We want to prove that a projectile will travel the furthest horizontal distance (the "range") if you launch it at exactly a 45° angle, assuming you always launch it with the exact same initial speed. 
 
 We are given the formula for the range:
+
 $$R(\theta) = \frac{v_0^2 \sin(2\theta)}{g}$$
 
 In this formula:
@@ -47,33 +50,52 @@ Since $v_0$ and $g$ are constant, the only thing that changes the range $R$ is t
 ---
 
 ### Step 1: Take the Derivative
+
 In calculus, the derivative tells us the "slope" of our function. When a curve reaches its highest peak (the maximum range), it flattens out for a split second, meaning its slope is exactly zero. 
 
 To find that peak, we first need to take the derivative of the range $R$ with respect to the angle $\theta$:
+
 $$\frac{dR}{d\theta} = \frac{d}{d\theta} \left( \frac{v_0^2 \sin(2\theta)}{g} \right)$$
 
 Because $\frac{v_0^2}{g}$ is just a constant multiplier, we can pull it out of the derivative. We only need to differentiate $\sin(2\theta)$. Using the chain rule, the derivative of $\sin(2\theta)$ is $2\cos(2\theta)$. 
 
 So, our derivative becomes:
-$$\frac{dR}{d\theta} = \frac{v_0^2}{g} \cdot 2\cos(2\theta) = \frac{2v_0^2\cos(2\theta)}{g}$$
+
+$$\frac{dR}{d\theta} = \frac{v_0^2}{g} \cdot 2\cos(2\theta)$$
+
+Which simplifies to:
+
+$$\frac{dR}{d\theta} = \frac{2v_0^2\cos(2\theta)}{g}$$
+
+---
 
 ### Step 2: Set the Derivative to Zero
+
 Now that we have an equation for the slope, we want to find out where the slope is perfectly flat. We do this by setting our derivative equal to 0:
+
 $$\frac{2v_0^2\cos(2\theta)}{g} = 0$$
 
+---
+
 ### Step 3: Solve for the Angle ($\theta$)
+
 Now we just need to solve for $\theta$. 
 
 Look at the fraction: $\frac{2v_0^2}{g}$. Because we assume the projectile is actually moving ($v_0$ is not zero) and gravity exists ($g$ is not zero), this fraction cannot equal zero. 
 
 For the whole equation to equal zero, the trigonometric part must be the thing that equals zero:
+
 $$\cos(2\theta) = 0$$
 
 Now we ask ourselves: at what angle does the cosine function equal zero? Cosine is zero at 90°. Therefore, the inside of our cosine function must equal 90°:
+
 $$2\theta = 90^\circ$$
 
 Divide by 2:
+
 $$\theta = 45^\circ$$
+
+---
 
 ## 3. Path Intersection
 
