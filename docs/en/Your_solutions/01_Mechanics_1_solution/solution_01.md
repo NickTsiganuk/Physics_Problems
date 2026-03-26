@@ -29,27 +29,49 @@ We are given an initial velocity $v_0$ of 100 m/s and an angle $\theta$ of 37°.
 
 ## 2. Range Optimization
 
-> **Task:** For projectile motion, show analytically that the maximum range $R(\theta)=\frac{v_0^2\sin(2\theta)}{g}$ for a given initial velocity is achieved at a launch angle of 45°.
+### The Goal
+We want to prove that a projectile will travel the furthest horizontal distance (the "range") if you launch it at exactly a 45° angle, assuming you always launch it with the exact same initial speed. 
 
-**Solution:**
+We are given the formula for the range:
+$$R(\theta) = \frac{v_0^2 \sin(2\theta)}{g}$$
 
-To find the angle $\theta$ that maximizes the range, we must find where its first derivative with respect to $\theta$ equals zero.
+In this formula:
+* $v_0$ is the initial launch velocity (a constant).
+* $g$ is the acceleration due to gravity (a constant).
+* $\theta$ is the launch angle (our variable). 
 
-1.  **Differentiate $R$ with respect to $\theta$:**
-
-    $$\frac{dR}{d\theta}=\frac{v_0^2}{g}\cdot\frac{d}{d\theta}(\sin(2\theta))=\frac{2v_0^2\cos(2\theta)}{g}$$
-
-2.  **Set the derivative to zero:**
-
-    $$\frac{2v_0^2\cos(2\theta)}{g}=0$$
-
-    Since $\frac{2v_0^2}{g}$ is a non-zero constant, we must have $\cos(2\theta)=0$.
-
-3.  **Solve for $\theta$:**
-
-    The cosine function is zero at 90°. Therefore, $2\theta=90^\circ$, which means **$\theta=45^\circ$**. (The second derivative $-\frac{4v_0^2\sin(2\theta)}{g}$ is negative at 45°, confirming this is a maximum).
+Since $v_0$ and $g$ are constant, the only thing that changes the range $R$ is the angle $\theta$.
 
 ---
+
+### Step 1: Take the Derivative
+In calculus, the derivative tells us the "slope" of our function. When a curve reaches its highest peak (the maximum range), it flattens out for a split second, meaning its slope is exactly zero. 
+
+To find that peak, we first need to take the derivative of the range $R$ with respect to the angle $\theta$:
+$$\frac{dR}{d\theta} = \frac{d}{d\theta} \left( \frac{v_0^2 \sin(2\theta)}{g} \right)$$
+
+Because $\frac{v_0^2}{g}$ is just a constant multiplier, we can pull it out of the derivative. We only need to differentiate $\sin(2\theta)$. Using the chain rule, the derivative of $\sin(2\theta)$ is $2\cos(2\theta)$. 
+
+So, our derivative becomes:
+$$\frac{dR}{d\theta} = \frac{v_0^2}{g} \cdot 2\cos(2\theta) = \frac{2v_0^2\cos(2\theta)}{g}$$
+
+### Step 2: Set the Derivative to Zero
+Now that we have an equation for the slope, we want to find out where the slope is perfectly flat. We do this by setting our derivative equal to 0:
+$$\frac{2v_0^2\cos(2\theta)}{g} = 0$$
+
+### Step 3: Solve for the Angle ($\theta$)
+Now we just need to solve for $\theta$. 
+
+Look at the fraction: $\frac{2v_0^2}{g}$. Because we assume the projectile is actually moving ($v_0$ is not zero) and gravity exists ($g$ is not zero), this fraction cannot equal zero. 
+
+For the whole equation to equal zero, the trigonometric part must be the thing that equals zero:
+$$\cos(2\theta) = 0$$
+
+Now we ask ourselves: at what angle does the cosine function equal zero? Cosine is zero at 90°. Therefore, the inside of our cosine function must equal 90°:
+$$2\theta = 90^\circ$$
+
+Divide by 2:
+$$\theta = 45^\circ$$
 
 ## 3. Path Intersection
 
