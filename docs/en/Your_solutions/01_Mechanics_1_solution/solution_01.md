@@ -28,6 +28,8 @@ We are given an initial velocity $v_0$ of 100 m/s and an angle $\theta$ of 37°.
 ---
 
 ## 2. Range Optimization
+For projectile motion, show analytically that the maximum range $R(\theta)=\frac{v_0^2 \sin(2\theta)}{g}
+$ for a given initial velocity is achieved at a launch angle of $45^\circ$.
 
 ### The Goal
 We want to prove that a projectile will travel the furthest horizontal distance (the "range") if you launch it at exactly a 45° angle, assuming you always launch it with the exact same initial speed. 
