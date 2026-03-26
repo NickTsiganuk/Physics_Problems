@@ -1,3 +1,4 @@
+
 ## 1. Projectile Motion
 
 > **Task:** A projectile is fired from the ground with an initial velocity of 100 m/s at an angle of 37° above the horizontal. Assume no air resistance. 
@@ -241,3 +242,5 @@ plt.show()
 * **$a=b$:** The equation becomes $x^2+y^2=a^2$. The base is a perfect circle, and the curve is a standard circular helix (like a typical spring). The path length integral also simplifies nicely into a linear relation because the speed becomes constant.
 * **$a=0$ or $b=0$:** If $b=0$, the particle simply oscillates back and forth along the $x$-axis from $x=a$ to $x=-a$ because $y=0$ and $z=0$. If $a=0$, it oscillates on the $y$-axis while simultaneously moving steadily up the $z$-axis (resulting in a 2D sine wave traced on the $yz$-plane).
 * **$\omega=0$:** The particle remains at $x=a, y=0$ while moving steadily up the $z$-axis at speed $b$. The path is a straight vertical line.
+
+---
